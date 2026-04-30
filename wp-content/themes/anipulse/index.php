@@ -16,7 +16,7 @@ get_header();
                 while ( have_posts() ) :
                     the_post();
                     ?>
-                    <article id="post-<?php identify_post_class(); ?>" <?php post_class( 'anime-card' ); ?>>
+                    <article id="post-<?php the_ID(); ?>" <?php post_class( 'anime-card' ); ?>>
                         <div class="card-image-wrapper">
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <a href="<?php the_permalink(); ?>">
